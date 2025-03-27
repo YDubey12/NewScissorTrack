@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Username Input</title>
+</head>
+<body>
+
+    <form action="submit.php" method="post">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Input</title>
+</head>
+<body>
+
+    <form action="submit.php" method="post">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Toggle</title>
+</head>
+<body>
+
+    <form action="submit.php" method="post">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+        <button type="button" onclick="togglePassword()">Show Password</button>
+        <button type="submit">Submit</button>
+    </form>
+
+    <script>
+        function togglePassword() {
+            var passField = document.getElementById("password");
+            if (passField.type === "password") {
+                passField.type = "text";
+            } else {
+                passField.type = "password";
+            }
+        }
+    </script>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendar Input</title>
+</head>
+<body>
+
+    <form action="submit.php" method="post">
+        <label for="date">Select Date:</label>
+        <input type="date" id="date" name="date" required>
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Button Example</title>
+</head>
+<body>
+
+    <form action="submit.php" method="post">
+        <label>Select Your Gender:</label><br>
+
+        <input type="radio" id="male" name="gender" value="male" required>
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Upload</title>
+</head>
+<body>
+
+    <form action="upload.php" method="post" enctype="multipart/form-data">
+        <label for="image">Upload Image:</label>
+        <input type="file" id="image" name="image" accept="image/*" required>
+        <button type="submit">Upload</button>
+    </form>
+
+</body>
+</html>
